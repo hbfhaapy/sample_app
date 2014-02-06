@@ -15,6 +15,8 @@ group :development, :test do
  gem 'guard-spork', '1.5.0'
  gem 'childprocess', '0.4.0'
  gem 'zeus', '0.13.3'
+ gem 'cucumber-rails', '1.4.0', :require => false
+ gem 'database_cleaner', github: 'bmabey/database_cleaner'
 end
 # group :production do
 	gem 'pg', '0.15.1'

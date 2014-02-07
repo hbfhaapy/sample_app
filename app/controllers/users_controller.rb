@@ -14,6 +14,7 @@ class UsersController < ApplicationController
 	end  
 
 	def new
+		redirect_to(root_path) unless !signed_in?
 		@user = User.new
 	end
 
@@ -24,6 +25,7 @@ class UsersController < ApplicationController
 	end
 
 	def create
+		redirect_to(root_path) unless !signed_in?
 		@user = User.new(user_params)
 		if @user.save
 			sign_in @user

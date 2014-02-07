@@ -16,4 +16,9 @@ FactoryGirl.define do
 			admin true
 		end
 	end
+
+	factory :micropost do
+		content "Mark here"
+		user
+	end
 end

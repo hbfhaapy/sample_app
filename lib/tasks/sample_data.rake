@@ -21,7 +21,7 @@ def make_users
 				         email: email,
 				         password: password,
 				         password_confirmation: password)
-		end	s
+		end
 end
 
 def make_microposts
